@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  font-family: "Gaegu", cursive;
+}
+body .dcm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .dcm .spinnerContainer {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 300px;
+  background-color: rgb(54, 81, 50);
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+body .dcm .spinnerContainer .flecha {
+  width: 40px;
+  height: 40px;
+  background-image: url(../assets/iconos/caret-abajo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -20px;
+  z-index: 1;
+}
+body .dcm .spinnerContainer .punto {
+  background-color: #ffffff;
+  border: solid 2px black;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 3;
+  border-radius: 50%;
+  margin-top: 60px;
+}
+body .dcm .spinnerContainer #girarSpinnerJs {
+  transition: all 5s;
+  transform: rotate(3333deg);
+}
+body .dcm .spinnerContainer .spinner {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  position: relative;
+  font-size: 14px;
+  overflow: hidden;
+  border-radius: 100%;
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  transform-origin: 0% 100%;
+  overflow: hidden;
+}
+body .dcm .spinnerContainer .spinner .peli .nombrePeli {
+  background-color: green;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  left: -100%;
+  text-align: center;
+  padding-top: 20px;
+  transform: skewY(60deg) rotate(15deg);
+}
+body .dcm .spinnerContainer .spinner .peli .nombrePeli p {
+  margin-top: 50px;
+  transform: rotate(-90deg);
+}
+body .dcm .spinnerContainer .spinner .peli:first-child {
+  transform: rotate(0deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:first-child .nombrePeli {
+  color: white;
+  background-color: #613232;
+  font-weight: 700;
+  font-size: 25px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(2) {
+  transform: rotate(30deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(2) .nombrePeli {
+  color: white;
+  background-color: #615032;
+  font-weight: 700;
+  font-size: 20px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(3) {
+  transform: rotate(60deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(3) .nombrePeli {
+  color: white;
+  background-color: #426132;
+  font-weight: bold;
+  font-weight: 700;
+  font-size: 25px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(4) {
+  transform: rotate(90deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(4) .nombrePeli {
+  color: white;
+  background-color: #32615b;
+  font-weight: bold;
+  font-size: 25px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(5) {
+  transform: rotate(120deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(5) .nombrePeli {
+  color: white;
+  background-color: #3c3261;
+  font-weight: bold;
+  font-size: 25px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(6) {
+  transform: rotate(150deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(6) .nombrePeli {
+  color: white;
+  background-color: #61324b;
+  font-weight: bold;
+  font-size: 19px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(7) {
+  transform: rotate(180deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(7) .nombrePeli {
+  color: white;
+  background-color: #613232;
+  font-weight: bold;
+  font-size: 19px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(8) {
+  transform: rotate(210deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(8) .nombrePeli {
+  color: white;
+  background-color: #615032;
+  font-weight: bold;
+  font-size: 25px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(9) {
+  transform: rotate(240deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(9) .nombrePeli {
+  color: white;
+  background-color: #426132;
+  font-weight: bold;
+  font-size: 20px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(10) {
+  transform: rotate(270deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(10) .nombrePeli {
+  color: white;
+  background-color: #32615b;
+  font-weight: bold;
+  font-size: 25px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(11) {
+  transform: rotate(300deg) skewY(-60deg);
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(11) .nombrePeli {
+  color: white;
+  background-color: #3c3261;
+  font-weight: bold;
+  font-size: 25px;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(12) {
+  transform: rotate(330deg) skewY(-60deg);
+  border: solid 1px black;
+  border: solid 2px black;
+}
+body .dcm .spinnerContainer .spinner .peli:nth-child(12) .nombrePeli {
+  color: white;
+  background-color: #61324b;
+  font-weight: bold;
+  font-size: 25px;
+}
+@media (max-width: 460px) {
+  body .dcm .spinnerContainer .spinner {
+    width: 320px;
+    height: 320px;
+  }
+  body .dcm .spinnerContainer .spinner .peli .nombrePeli p {
+    margin-top: 30px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:first-child .nombrePeli {
+    font-size: 20px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(2) .nombrePeli {
+    font-size: 20px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(3) .nombrePeli {
+    font-size: 20px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(4) .nombrePeli {
+    font-size: 20px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(5) .nombrePeli {
+    font-size: 22px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(6) .nombrePeli {
+    font-size: 14px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(7) .nombrePeli {
+    font-size: 15px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(8) .nombrePeli {
+    font-size: 20px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(9) .nombrePeli {
+    font-size: 17px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(10) .nombrePeli {
+    font-size: 20px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(11) .nombrePeli {
+    font-size: 17px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(12) .nombrePeli {
+    font-size: 17px;
+  }
+}
+body .dcm .btnGirarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 20vh;
+  background-color: #DDF8D7;
+  border-top: 5px solid #000;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+body .dcm .btnGirarContainer .girar {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  border: solid 2px black;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+  cursor: pointer;
+}
+body .dcm .btnGirarContainer .girar:hover {
+  transition: all 250ms;
+  transform: scale(1.1);
+  background-color: rgba(37, 37, 37, 0.768627451);
+}
+body .swal2-popup {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  height: 95vh;
+  width: 320px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  border: solid 10px rgb(54, 81, 50);
+}/*# sourceMappingURL=style.css.map */
