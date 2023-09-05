@@ -525,17 +525,19 @@ spinButton.addEventListener('click', ()=>{
         //----Recorer el array, seleccionar un pelicula al azar por id (random)
         setTimeout(function(){
             numeroRandom = parseInt(Math.random() * nombrePeliculas.length)
-            // console.log(numeroRandom)
             let pelicula = nombrePeliculas.filter(producto => producto.id == numeroRandom)
-            // console.log(pelicula)
             let tituloPelicula = pelicula[0].titulo
-            console.log(tituloPelicula)
             Swal.fire({
                 icon: 'success',
                 title: `${tituloPelicula}`,
                 backdrop:`rgba(0,0,0, 0.8)`
             })
+            roulette.setAttribute('id','girarSpinnerJs')
         }, 4500);
+        setTimeout(()=>{
+            //---- acomodar ruleta
+            roulette.removeAttribute('id','girarSpinnerJs')
+        },4600)
     }
 })
 
