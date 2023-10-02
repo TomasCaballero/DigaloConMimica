@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: monospace, Arial, Helvetica, sans-serif;
 }
 
 body {
   height: 100vh;
   background-color: rgb(0, 0, 0);
-  font-family: "Gaegu", cursive;
   max-height: 800px;
 }
 body .dcm {
@@ -102,7 +102,7 @@ body .dcm .spinnerContainer .spinner .peli:first-child .nombrePeli {
   color: white;
   background-color: #613232;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(2) {
   transform: rotate(30deg) skewY(-60deg);
@@ -112,7 +112,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(2) .nombrePeli {
   color: white;
   background-color: #615032;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(3) {
   transform: rotate(60deg) skewY(-60deg);
@@ -123,7 +123,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(3) .nombrePeli {
   background-color: #426132;
   font-weight: bold;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(4) {
   transform: rotate(90deg) skewY(-60deg);
@@ -133,7 +133,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(4) .nombrePeli {
   color: white;
   background-color: #32615b;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(5) {
   transform: rotate(120deg) skewY(-60deg);
@@ -143,7 +143,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(5) .nombrePeli {
   color: white;
   background-color: #3c3261;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(6) {
   transform: rotate(150deg) skewY(-60deg);
@@ -153,7 +153,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(6) .nombrePeli {
   color: white;
   background-color: #61324b;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(7) {
   transform: rotate(180deg) skewY(-60deg);
@@ -163,7 +163,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(7) .nombrePeli {
   color: white;
   background-color: #613232;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(8) {
   transform: rotate(210deg) skewY(-60deg);
@@ -173,7 +173,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(8) .nombrePeli {
   color: white;
   background-color: #615032;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(9) {
   transform: rotate(240deg) skewY(-60deg);
@@ -183,7 +183,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(9) .nombrePeli {
   color: white;
   background-color: #426132;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(10) {
   transform: rotate(270deg) skewY(-60deg);
@@ -193,7 +193,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(10) .nombrePeli {
   color: white;
   background-color: #32615b;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(11) {
   transform: rotate(300deg) skewY(-60deg);
@@ -203,7 +203,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(11) .nombrePeli {
   color: white;
   background-color: #3c3261;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 body .dcm .spinnerContainer .spinner .peli:nth-child(12) {
   transform: rotate(330deg) skewY(-60deg);
@@ -214,7 +214,7 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(12) .nombrePeli {
   color: white;
   background-color: #61324b;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 14px;
 }
 @media (max-width: 460px) {
   body .dcm .spinnerContainer .spinner {
@@ -225,40 +225,40 @@ body .dcm .spinnerContainer .spinner .peli:nth-child(12) .nombrePeli {
     margin-top: 30px;
   }
   body .dcm .spinnerContainer .spinner .peli:first-child .nombrePeli {
-    font-size: 20px;
-  }
-  body .dcm .spinnerContainer .spinner .peli:nth-child(2) .nombrePeli {
-    font-size: 20px;
-  }
-  body .dcm .spinnerContainer .spinner .peli:nth-child(3) .nombrePeli {
-    font-size: 20px;
-  }
-  body .dcm .spinnerContainer .spinner .peli:nth-child(4) .nombrePeli {
-    font-size: 20px;
-  }
-  body .dcm .spinnerContainer .spinner .peli:nth-child(5) .nombrePeli {
-    font-size: 22px;
-  }
-  body .dcm .spinnerContainer .spinner .peli:nth-child(6) .nombrePeli {
     font-size: 14px;
   }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(2) .nombrePeli {
+    font-size: 14px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(3) .nombrePeli {
+    font-size: 14px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(4) .nombrePeli {
+    font-size: 14px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(5) .nombrePeli {
+    font-size: 17px;
+  }
+  body .dcm .spinnerContainer .spinner .peli:nth-child(6) .nombrePeli {
+    font-size: 10px;
+  }
   body .dcm .spinnerContainer .spinner .peli:nth-child(7) .nombrePeli {
-    font-size: 15px;
+    font-size: 12px;
   }
   body .dcm .spinnerContainer .spinner .peli:nth-child(8) .nombrePeli {
-    font-size: 20px;
+    font-size: 14px;
   }
   body .dcm .spinnerContainer .spinner .peli:nth-child(9) .nombrePeli {
-    font-size: 17px;
+    font-size: 11px;
   }
   body .dcm .spinnerContainer .spinner .peli:nth-child(10) .nombrePeli {
-    font-size: 20px;
+    font-size: 14px;
   }
   body .dcm .spinnerContainer .spinner .peli:nth-child(11) .nombrePeli {
-    font-size: 17px;
+    font-size: 14px;
   }
   body .dcm .spinnerContainer .spinner .peli:nth-child(12) .nombrePeli {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 body .dcm .btnGirarContainer {
@@ -280,9 +280,9 @@ body .dcm .btnGirarContainer .girar {
   font-weight: bold;
   font-size: large;
   cursor: pointer;
+  transition: all 700ms ease-in-out;
 }
 body .dcm .btnGirarContainer .girar:hover {
-  transition: all 700ms;
   transform: scale(1.05);
   color: black;
   background-color: rgba(255, 255, 255, 0.768627451);
